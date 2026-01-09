@@ -1,0 +1,1370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DS | ML | AI Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* ================= THEME VARIABLES ================= */
+    :root{
+      --bg-main:#1c1608;
+      --bg-section:#231c0b;
+      --text-main:#fef3c7;
+      --accent:#facc15;
+      --glass:rgba(255,255,255,0.08);
+    }
+
+    body{
+      margin:0;
+      background:var(--bg-main);
+      color:var(--text-main);
+      font-family:Poppins,sans-serif;
+      overflow-x:hidden;
+    }
+
+    /* BACKGROUND MOTION */
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      background:linear-gradient(120deg,#1c1608,#3b2f1c,#facc15);
+      background-size:400% 400%;
+      animation:gradMove 16s ease infinite;
+      opacity:.25;
+      z-index:-3;
+    }
+
+    @keyframes gradMove{
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+
+    /* NAVBAR */
+    .navbar{
+      backdrop-filter:blur(14px);
+      background:var(--glass);
+      border-bottom:1px solid rgba(255,255,255,.15);
+    }
+
+    .navbar-brand{
+      color:var(--accent)!important;
+      font-size:20px;
+      font-weight:700;
+      letter-spacing:1px;
+    }
+
+    /* HERO SECTION */
+    section{
+      background:var(--bg-section);
+      border-radius:18px;
+      margin:90px auto;
+      padding:50px;
+      box-shadow:0 15px 40px rgba(0,0,0,.6);
+      max-width:1100px;
+    }
+
+    .hero{
+      background:radial-gradient(circle at top left,#facc15,#1c1608 65%);
+    }
+
+    .profile-hero-img{
+      width:260px;
+      height:260px;
+      border-radius:50%;
+      object-fit:cover;
+      border:6px solid var(--accent);
+      box-shadow:0 0 60px rgba(250,204,21,.45);
+    }
+
+    .hero h1{
+      font-weight:800;
+      margin-bottom:12px;
+    }
+
+    .hero h1 span{
+      color:var(--accent);
+    }
+
+    .hero p{
+      color:#fef3c7;
+      font-weight:500;
+      max-width:520px;
+    }
+
+    /* BUTTONS */
+    .btn-primary{
+      background:linear-gradient(135deg,var(--accent),#fde047);
+      border:none;
+      color:#1c1608;
+      font-weight:600;
+    }
+
+    .btn-outline-primary{
+      border-color:var(--accent);
+      color:var(--accent);
+    }
+
+    .btn-outline-primary:hover{
+      background:var(--accent);
+      color:#1c1608;
+    }
+
+    /* ICON LINKS */
+    .icon-link{
+      width:44px;
+      height:44px;
+      border-radius:50%;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background:#1c1608;
+      color:var(--accent);
+      font-size:18px;
+      border:1px solid rgba(250,204,21,.5);
+      margin-left:10px;
+      transition:.3s ease;
+      text-decoration:none;
+    }
+
+    .icon-link:hover{
+      background:var(--accent);
+      color:#1c1608;
+      transform:translateY(-3px);
+    }
+  </style>
+</head>
+
+<body class="dark">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">DS | ML | AI</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="row align-items-center">
+
+    <div class="col-md-5 text-center">
+      <img src="images/img1.jpeg"
+           class="profile-hero-img"
+           alt="Debangshu Sadhukhan">
+    </div>
+
+    <div class="col-md-7">
+      <h1>I'm <span>Debangshu Sadhukhan</span></h1>
+
+      <p>
+        Data Science & AI professional building production-ready
+        Machine Learning, Deep Learning, and LLM-powered systems.
+      </p>
+
+      <!-- ACTION ROW -->
+      <div class="d-flex align-items-center mt-3 flex-wrap gap-3">
+
+        <!-- GitHub -->
+        <a href="https://github.com/debangshu9183"
+           class="btn btn-primary me-4"
+           target="_blank">
+           <i class="fab fa-github me-1"></i> GitHub
+        </a>
+
+        <!-- Resume -->
+        <a href="resume/DEBANGSHU  SADHUKHAN_RESUME.pdf"
+           class="btn btn-outline-primary"
+           download>
+           <i class="fas fa-file-download me-5"></i> Resume
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/debangshu-sadhukhan-ab5861200"
+           target="_blank"
+           class="icon-link"
+           title="LinkedIn">
+           <i class="fab fa-linkedin-in"></i>
+        </a>
+
+        <!-- Gmail -->
+        <a href="mailto:debangshu.data@gmail.com"
+           class="icon-link"
+           title="Email">
+           <i class="fas fa-envelope"></i>
+        </a>
+
+        <!-- Phone -->
+        <a href="tel:+917439477347"
+           class="icon-link"
+           title="Call">
+           <i class="fas fa-phone"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EVERYTHING ELSE BELOW IS 100% UNCHANGED -->
+<!-- ABOUT -->
+<section data-aos="fade-up" class="about-section">
+  <div class="about-container">
+
+    <!-- LEFT CONTENT -->
+    <div class="about-text">
+      <h2>About Me</h2>
+
+      <p>
+        I’m a <strong>Data Science & AI professional</strong> who thrives on solving
+        real-world problems using data, algorithms, and well-engineered systems.
+        I enjoy working across the <strong>entire data lifecycle</strong> — from
+        understanding messy raw data to delivering <strong>production-ready AI solutions</strong>
+        that actually get used.
+      </p>
+
+      <p>
+        My experience spans <strong>exploratory data analysis, feature engineering,
+        and data visualization</strong>, all the way to building
+        <strong>scalable data pipelines</strong> and deploying
+        <strong>machine learning, deep learning, and LLM-powered systems</strong>.
+        I’m comfortable moving between analysis, modeling, and engineering —
+        and I see that versatility as a strength.
+      </p>
+
+      <p>
+        I’ve designed <strong>decision-driven Power BI dashboards</strong>,
+        built <strong>FastAPI-based backends</strong>, trained
+        <strong>ML & deep learning models</strong>, and developed
+        <strong>production-grade RAG pipelines and agentic AI workflows</strong>.
+        I focus not just on model accuracy, but on
+        <strong>latency, scalability, interpretability, and maintainability</strong>.
+        In short — I don’t stop at notebooks; I ship systems
+      </p>
+
+      <p>
+        I enjoy working at the intersection of
+        <strong>data analysis, data engineering, and AI</strong>,
+        where clean data meets smart algorithms and business goals.
+        I care deeply about <strong>performance, robustness, and measurable impact</strong>,
+        and I’m always thinking about how a solution will behave in the real world —
+        not just in theory.
+      </p>
+
+      <p>
+        Outside of model building, you’ll usually find me
+        <strong>optimizing pipelines, improving dashboards, experimenting with new architectures,
+        or refining prompts and agents</strong>.
+        And yes — sometimes convincing a stubborn model to converge
+        takes equal parts logic, debugging, and coffee ☕😄
+      </p>
+	  <p class="about-highlight">
+		💡 If you’re looking for someone who can
+        <strong>analyze data, engineer scalable systems,
+        and build intelligent, production-ready AI products</strong>,
+        you’re looking at the right person.
+	  </p>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="about-image">
+      <img src="images/img3.jpeg" alt="Debangshu Sadhukhan">
+    </div>
+
+  </div>
+</section>
+
+<!-- ================== CSS ================== -->
+<style>
+.about-section {
+  max-width: 1300px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.about-text h2 {
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  opacity: 0.95;
+}
+
+.about-highlight {
+  margin-top: 20px;
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+/* IMAGE BOX */
+.about-image {
+  width: 100%;
+  height: 650px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(0,0,0,.35);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    height: 300px;
+  }
+}
+</style>
+
+
+<!-- EDUCATION -->
+<section data-aos="fade-up">
+  <h2>Education</h2>
+
+  <p>
+    <strong>M.Sc. Data Science & AI</strong> (2024–2026)<br>
+    Ramakrishna Mission Residential College, Narendrapur<br>
+    (University of Calcutta)<br>
+    <strong>SGPA:</strong> 8.80
+  </p>
+
+  <hr>
+
+  <p>
+    <strong>B.Sc. Statistics</strong> (2021–2024)<br>
+    Bidhannagar College<br>
+    <strong>CGPA:</strong> 9.10
+  </p>
+
+  <hr>
+
+  <p>
+    <strong>Higher Secondary (Class XII)</strong> – Science (2021)<br>
+    Springdale High School<br>
+    <strong>Percentage:</strong> 89%
+  </p>
+
+  <hr>
+
+  <p>
+    <strong>Madhyamik Pariksha (Class X)</strong> (2019)<br>
+    Springdale High School<br>
+    <strong>Percentage:</strong> 89.42%
+  </p>
+
+</section>
+<!-- ===================== SKILLS SECTION ===================== -->
+<style>
+  .skills-section {
+    margin-top: 70px;
+  }
+
+  .skills-section h2 {
+    margin-bottom: 25px;
+  }
+
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px 32px;
+  }
+
+  .skill {
+    width: 100%;
+  }
+
+  .skill-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #FFEF0A;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 8px;
+    background: #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .progress {
+    height: 100%;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #c72727, #de8f0e);
+    animation: loadSkill 1.5s ease-in-out;
+  }
+
+  @keyframes loadSkill {
+    from { width: 0; }
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<section data-aos="fade-right" class="skills-section">
+  <h2>Technical Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill">
+      <div class="skill-header"><span>Python</span><span>95%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:95%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header"><span>SQL</span><span>90%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header"><span>Pandas & NumPy</span><span>95%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:95%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header"><span>Scikit-learn</span><span>92%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:92%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header"><span>Data Analysis & EDA</span><span>95%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:95%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header"><span>Power BI & Visualization</span><span>90%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header"><span>Machine Learning</span><span>95%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:95%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header"><span>Deep Learning</span><span>90%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header"><span>CNN & LSTM</span><span>88%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:88%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header"><span>Transformers & LLMs</span><span>90%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header"><span>RAG & LangChain</span><span>92%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:92%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header"><span>Agentic AI (CrewAI)</span><span>88%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:88%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header"><span>FastAPI</span><span>90%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header"><span>Docker</span><span>85%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:85%"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-header"><span>AWS EC2</span><span>85%</span></div>
+      <div class="progress-bar"><div class="progress" style="width:85%"></div></div>
+    </div>
+    <div class="skill">
+        <div class="skill-header"><span>Git & GitHub</span><span>90%</span></div>
+        <div class="progress-bar"><div class="progress" style="width:90%"></div></div>
+    </div>
+
+  </div>
+</section>
+<!-- =================== END SKILLS SECTION =================== -->
+<!-- SOFT SKILLS -->
+<section data-aos="fade-up" class="soft-skills-section">
+  <h2>Soft Skills</h2>
+
+  <div class="soft-skills-grid">
+
+    <div class="soft-skill">
+      <div class="circle" style="--percent:90">95%</div>
+      <p>Problem Solving</p>
+    </div>
+
+    <div class="soft-skill">
+      <div class="circle" style="--percent:88">95%</div>
+      <p>Critical Thinking</p>
+    </div>
+
+    <div class="soft-skill">
+      <div class="circle" style="--percent:85">93%</div>
+      <p>Communication</p>
+    </div>
+
+    <div class="soft-skill">
+      <div class="circle" style="--percent:92">95%</div>
+      <p>Learning Ability</p>
+    </div>
+
+    <div class="soft-skill">
+      <div class="circle" style="--percent:87">97%</div>
+      <p>Team Collaboration</p>
+    </div>
+
+    <div class="soft-skill">
+      <div class="circle" style="--percent:80">90%</div>
+      <p>Time Management</p>
+    </div>
+
+  </div>
+</section>
+<!-- =================== CSS =================== -->
+<style>
+/* SOFT SKILLS */
+.soft-skills-section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.soft-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 35px;
+  margin-top: 40px;
+}
+
+.soft-skill p {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Circular Progress */
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background:
+    conic-gradient(
+      #cea811 calc(var(--percent) * 1%),
+      rgba(255,255,255,0.15) 0
+    );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin: auto;
+  box-shadow: 0 0 18px rgba(250,204,21,.35);
+}
+</style>
+
+
+<!-- EXPERIENCE -->
+<section data-aos="fade-up">
+  <h2>Experience</h2>
+
+  <div class="project-card">
+    <h5>Research Intern – ISI Kolkata</h5>
+    <ul>
+  <li>
+    Performed survival analysis on <strong>10K+ colorectal cancer patient records</strong>
+    using <strong>Kaplan–Meier estimators</strong> and
+    <strong>Cox Proportional Hazards models</strong> to identify key risk factors and survival trends.
+  </li>
+  <li>
+    Developed <strong>ML-based image and PDF detection pipelines</strong> for automated medical data
+    extraction and classification.
+  </li>
+  <li>
+    Optimized data preprocessing workflows, achieving a
+    <strong>40% reduction in processing time</strong> through pipeline automation.
+  </li>
+</ul>
+
+  </div>
+
+  <div class="project-card">
+    <h5>Data Science Intern – IDEAS, ISI Kolkata</h5>
+<ul>
+  <li>Designed and developed RESTful <strong>FastAPI</strong> services for secure <strong>CSV/JSON upload, validation, and merge operations</strong>.</li>
+  <li>Integrated <strong>MinIO (local S3-compatible object storage)</strong> for scalable file storage and retrieval of datasets.</li>
+  <li>Implemented <strong>UUID-based in-memory caching</strong> to optimize repeated merge operations, reducing API latency by <strong>~35%</strong>.</li>
+  <li>Handled structured metadata management and efficient dataset processing workflows to support downstream analytics.</li>
+</ul>
+
+  </div>
+</section>
+<!-- ===================== PROJECTS ===================== -->
+<section data-aos="fade-up" class="projects-section">
+  <h2 class="projects-title">Noteworthy Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- PROJECT 1 -->
+    <div class="project-box">
+      <div class="project-icon">📁</div>
+      <h4>Smart Yoga Analyzer</h4>
+      <p>
+        Developed an <strong>AI-powered real-time yoga posture correction system</strong>
+        using <strong>Mediapipe</strong> for pose extraction and
+        <strong>MLP, Random Forest, and CNN</strong> models for classification.
+        Implemented angle-based joint analysis to provide
+        <strong>real-time corrective feedback</strong>.
+        Achieved <strong>98% pose classification accuracy</strong>.
+      </p>
+      <a href="https://github.com/debangshu9183/Smart-Yoga_Analyzer" target="_blank" class="project-link">
+        View on GitHub →
+      </a>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-box">
+      <div class="project-icon">📁</div>
+      <h4>Healthcare Chatbot (Groq LLaMA RAG)</h4>
+      <p>
+        Built an <strong>LLM-powered healthcare assistant</strong> using
+        <strong>Groq-hosted LLaMA</strong> with <strong>LangChain-based RAG</strong>
+        architecture. Integrated <strong>AstraDB</strong> for vector storage,
+        optimized retrieval pipelines, and automated responses for
+        <strong>~900 medical queries per day</strong>.
+      </p>
+      <a href="https://github.com/debangshu9183/MEDICAL__CHATBOT" target="_blank" class="project-link">
+        Explore Project →
+      </a>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-box">
+      <div class="project-icon">📁</div>
+      <h4>Vision-to-Language Image Captioning</h4>
+      <p>
+        Implemented a <strong>multimodal CNN–LSTM encoder–decoder architecture</strong>
+        for automatic image caption generation.
+        Used <strong>VGG16 transfer learning</strong> for visual feature extraction
+        and sequence modeling with LSTM.
+        Evaluated performance using <strong>BLEU scores</strong>.
+      </p>
+      <a href="https://github.com/debangshu9183/Image_Captioning_Project" target="_blank" class="project-link">
+        View Repository →
+      </a>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-box">
+      <div class="project-icon">📁</div>
+      <h4>Blinkit Sales Analysis Dashboard</h4>
+      <p>
+        Designed an <strong>interactive Power BI dashboard</strong> to analyze
+        Blinkit sales trends, outlet performance, customer ratings,
+        and product categories.
+        Enabled <strong>data-driven retail decision-making</strong>
+        through dynamic filters and KPIs.
+      </p>
+      <a href="https://github.com/debangshu9183/Blinkit-Sales-Analysis-Dashboard-Power-BI-" target="_blank" class="project-link">
+        View Dashboard →
+      </a>
+    </div>
+
+    <!-- PROJECT 5 -->
+    <div class="project-box">
+      <div class="project-icon">📁</div>
+      <h4>SMOTE-Enhanced Fraud Detection & Recall Optimization</h4>
+      <p>
+        Built an end-to-end <strong>credit card fraud detection pipeline</strong>
+        using <strong>Python</strong>, <strong>Scikit-learn</strong>,
+        and <strong>Streamlit</strong>.
+        Addressed extreme class imbalance in <strong>284K+ transactions</strong>
+        using <strong>SMOTE</strong>.
+        Achieved <strong>92% fraud recall</strong> with
+        <strong>98% overall accuracy</strong>.
+      </p>
+      <a href="https://github.com/debangshu9183/FraudCheck-Detecting-credit_card-fraud" target="_blank" class="project-link">
+        View Project →
+      </a>
+    </div>
+
+    <!-- PROJECT 6 -->
+    <div class="project-box">
+      <div class="project-icon">📁</div>
+      <h4>Text Similarity using Transformer (TensorFlow)</h4>
+      <p>
+        Implemented a <strong>Transformer-based sentence similarity model from scratch</strong>
+        using <strong>TensorFlow/Keras</strong>.
+        Built custom <strong>Transformer encoder blocks</strong> with
+        multi-head attention and feed-forward layers.
+        Used <strong>cosine similarity</strong> to detect semantic duplication,
+        inspired by the <strong>Quora Question Pairs</strong> problem.
+      </p>
+      <a href="https://github.com/debangshu9183/Text-Similarity" target="_blank" class="project-link">
+        View Project →
+      </a>
+    </div>
+
+    <!-- PROJECT 7 -->
+    <div class="project-box hidden-project">
+      <div class="project-icon">📁</div>
+      <h4>Mobile Sales Dashboard – Power BI</h4>
+      <p>
+        Developed an <strong>interactive Power BI dashboard</strong> for analyzing
+        mobile phone sales across brands, products, and regions.
+        Tracked key <strong>KPIs</strong> such as revenue, units sold,
+        average selling price, and customer ratings using
+        <strong>DAX</strong> and <strong>Power Query</strong>.
+      </p>
+      <a href="https://github.com/debangshu9183/Mobile_sales_dashboard_POWER-BI" target="_blank" class="project-link">
+        View Dashboard →
+      </a>
+    </div>
+
+    <!-- PROJECT 8 -->
+    <div class="project-box hidden-project">
+      <div class="project-icon">📁</div>
+      <h4>FastAPI-Based File Management & Dataset Processing System</h4>
+      <p>
+        Built an <strong>industry-style backend data engineering system</strong>
+        using <strong>FastAPI</strong>.
+        Implemented <strong>PostgreSQL</strong> for metadata management,
+        <strong>MinIO (S3-compatible)</strong> for object storage,
+        and <strong>in-memory caching</strong> to accelerate dataset merges.
+      </p>
+      <a href="https://github.com/debangshu9183/FastAPI-Based-File-Management-and-Dataset-Processing-System-" target="_blank" class="project-link">
+        View Project →
+      </a>
+    </div>
+
+    <!-- PROJECT 9 (MISSING – NOW ADDED) -->
+    <div class="project-box hidden-project">
+      <div class="project-icon">📁</div>
+      <h4>Movie Recommendation System</h4>
+      <p>
+        Developed a <strong>content-based movie recommendation engine</strong>
+        using <strong>cosine similarity</strong> on movie metadata
+        such as genres, keywords, cast, and overview.
+        Delivered <strong>personalized recommendations</strong>
+        based on user-selected movies.
+      </p>
+      <a href="https://github.com/debangshu9183/Movie-Recommendation-System" target="_blank" class="project-link">
+        Explore Code →
+      </a>
+    </div>
+
+  </div>
+
+  <!-- SEE MORE BUTTON -->
+  <div class="see-more-container">
+    <button id="seeMoreBtn">See More Projects ↓</button>
+  </div>
+</section>
+
+<!-- ===================== CSS ===================== -->
+<style>
+.projects-section {
+  max-width: 1300px;
+  margin: auto;
+  padding: 80px 20px;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 60px;
+  color: #e5e7eb;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+.project-box {
+  background: linear-gradient(180deg, #4d4c48, #de8f0e);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 20px 40px rgba(247, 242, 208, 0.35);
+  transition: transform 0.35s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-8px);
+}
+
+.project-icon {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.project-box h4 {
+  color: #e0f2fe;
+  margin-bottom: 12px;
+}
+
+.project-box p {
+  color: #cbd5f5;
+  font-size: 14.5px;
+  line-height: 1.7;
+}
+
+.project-link {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+.hidden-project {
+  display: none;
+}
+
+.see-more-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#seeMoreBtn {
+  background: #f59e0b;
+  border: none;
+  padding: 14px 36px;
+  font-size: 16px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+</style>
+
+<!-- ===================== JS ===================== -->
+<script>
+const btn = document.getElementById("seeMoreBtn");
+const hiddenProjects = document.querySelectorAll(".hidden-project");
+let expanded = false;
+
+btn.addEventListener("click", () => {
+  expanded = !expanded;
+  hiddenProjects.forEach(p => p.style.display = expanded ? "block" : "none");
+  btn.textContent = expanded ? "Show Less ↑" : "See More Projects ↓";
+});
+</script>
+
+
+
+<!-- REPORTS -->
+<section data-aos="fade-up" class="reports-section">
+  <h2 class="reports-title">📄 Reports & Documentation</h2>
+
+  <div class="reports-grid">
+
+    <!-- REPORT 1 -->
+    <div class="report-card">
+      <div class="report-icon">📘</div>
+      <h4>FastAPI-Based File Management & Dataset Processing System</h4>
+      <p>
+        Detailed technical report covering system architecture, REST API design,
+        dataset merging logic, PostgreSQL-based metadata management,
+        MinIO object storage integration, and in-memory caching strategies
+        used in an industry-style data engineering workflow.
+      </p>
+      <a href="reports/ideas_project (1).pdf"
+         target="_blank"
+         class="btn btn-outline-primary btn-sm">
+        View Report (PDF)
+      </a>
+    </div>
+
+    <!-- PLACEHOLDER -->
+    <div class="report-card report-coming">
+      <div class="report-icon">📄</div>
+      <h4>More Reports Coming Soon</h4>
+      <p>
+        Technical reports and documentation on Machine Learning,
+        Deep Learning, NLP, Data Engineering, and GenAI systems.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== CSS (OVERLAP-SAFE & COMPACT) ===================== -->
+<style>
+/* REPORTS SECTION – FORCE GAP FROM PROJECTS */
+.reports-section {
+  max-width: 1300px;
+  margin: 120px auto 120px; /* 👈 BIG TOP GAP FIX */
+  padding: 60px 20px 80px;  /* compact padding */
+  position: relative;
+  z-index: 1;
+}
+
+/* TITLE */
+.reports-title {
+  text-align: center;
+  font-size: 28px;          /* slightly smaller */
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.reports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* smaller cards */
+  gap: 30px;
+}
+
+/* CARD – COMPACT */
+.report-card {
+  background: var(--bg-section, #ffffff);
+  border-radius: 16px;
+  padding: 22px;           /* 👈 reduced padding */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.22);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.report-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+}
+
+/* ICON */
+.report-icon {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+/* TEXT */
+.report-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.report-card p {
+  font-size: 14px;
+  line-height: 1.65;
+  opacity: 0.9;
+  margin-bottom: 16px;
+}
+
+/* PLACEHOLDER */
+.report-coming {
+  opacity: 0.7;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .reports-section {
+    margin-top: 140px;
+    padding: 50px 16px 70px;
+  }
+}
+</style>
+
+
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" data-aos="fade-up">
+  <h2>Certifications</h2>
+
+  <ul class="cert-list">
+    <!-- Existing (kept as requested) -->
+    <li>
+      <strong>IBM SkillsBuild</strong> – Agentic AI Architect (2025)
+      <a href="cerificates/pbl certificate.pdf" target="_blank">View PDF</a>
+    </li>
+
+    <li>
+      <strong>Deloitte</strong> – Data Analytics Simulation (2025)
+      <a href="cerificates/deloitte.pdf" target="_blank">View PDF</a>
+    </li>
+     <li>
+      <strong>British Airways</strong> – Data Science (2025)
+      <a href="cerificates/british airways.pdf" target="_blank">View PDF</a>
+    </li>
+
+    <li>
+      <strong>Udemy</strong> – The Complete SQL Bootcamp
+      <a href="cerificates/THE COMPLETE SQL BOOTCAMP.pdf" target="_blank">View PDF</a>
+    </li>
+
+    <!-- Added from your PDFs -->
+    <li>
+      <strong>Data Science & Analytics</strong> – Professional Certification
+      <a href="cerificates/Data Science & Analytics.pdf" target="_blank">View PDF</a>
+    </li>
+
+    <li>
+      <strong>Python from Basics to Advanced</strong>
+      <a href="cerificates/PYTHON FROM BASICS TO ADVANCE.pdf" target="_blank">View PDF</a> 
+    </li>
+
+    <li>
+      <strong>Data Structures Using Python</strong>
+      <a href="cerificates/2025 DATA STRUCTURE USING PYTHON.pdf" target="_blank">View PDF</a>
+    </li>
+
+    <li>
+      <strong>Mastering Python & Pandas</strong>
+      <a href="cerificates/MATERING PYTHON,PANDAS FOR ABSOLUTE BEGINEERS.pdf" target="_blank">View PDF</a>
+    </li>
+
+    <li>
+      <strong>AI for Beginners(HP)</strong>
+      <a href="cerificates/AI for Beginner.pdf" target="_blank">View PDF</a>
+    </li>
+
+    <li>
+      <strong>Deep Think</strong> – AI & Problem Solving Certification
+       <a href="cerificates/Deep Think_Certificate.pdf" target="_blank">View PDF</a>
+    </li>
+
+    <li>
+      <strong>2025 Master Class on Data Science</strong>
+      <a href="cerificates/2025 MASTER CLASS ON DATA SCIENCEUSING PYTHON A-Z FOR ML.pdf" target="_blank">View PDF</a>
+    </li>
+  </ul>
+</section>
+
+<style>
+  .cert-list {
+    margin-top: 16px;
+    padding-left: 20px;
+  }
+
+  .cert-list li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+
+  .cert-list strong {
+    color: #facc15;
+  }
+
+  .cert-list a {
+    margin-left: 8px;
+    font-size: 13px;
+    color: #60a5fa;
+    text-decoration: none;
+  }
+
+  .cert-list a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+
+<!-- ACHIEVEMENTS -->
+<section data-aos="fade-up">
+  <h2>Achievements</h2>
+  <ul>
+    <li>🥈 2nd Place – Analyticon 2025 (Data Visualization), St. Xavier’s College.</li>
+    <li>💻Participated in the **DeepThink--Perceptron Hackathon** organized by **RKMVERI, Belur Math**.</li>
+
+    <li>🥉 Two-time winner of the **Mathematics Aptitude Test** organized by **Kalyani University**.</li>   
+    <li>🏅Successfully submitted an innovative project proposal for the **Bharatiya Antariksh Hackathon 2025**.</li>
+    <li>🎖️Secured **Departmental Rank 2** in the Postgraduate program in **Data Science & AI**.</li>
+    <li>🎖️Secured **Departmental Rank 4** in **Statistics** at the Undergraduate Program.</li>
+    <li>⚽ Football Champion – Inter-departmental Tournament</li>
+    
+  </ul>
+</section>
+
+<!-- HIRE ME -->
+<style>
+  .hire-me {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #282717, #de8f0e);
+    color: #fff;
+    border-radius: 16px;
+    margin-top: 80px;
+  }
+
+  .hire-me h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .hire-me p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    opacity: 0.95;
+  }
+
+  .btn-light {
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 30px;
+    background: #fff;
+    color: #111;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .btn-light:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  }
+
+  .connect-me {
+    margin-top: 30px;
+    font-size: 15px;
+    opacity: 0.95;
+  }
+
+  .connect-me a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 0 8px;
+  }
+
+  footer {
+    text-align: center;
+    margin: 50px 0 20px;
+    font-size: 14px;
+    opacity: 0.7;
+  }
+
+  .theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 14px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background: #111;
+    color: #fff;
+    font-size: 14px;
+    z-index: 999;
+  }
+
+  body.dark .theme-toggle {
+    background: #fff;
+    color: #111;
+  }
+</style>
+
+<section class="hire-me" data-aos="flip-up">
+  <h2>Let’s Work Together</h2>
+  <p>Actively open to AI/ML internships and full-time roles across Data Science, Data Analysis, and Data Engineering, with a strong interest in research-oriented and AI product development teams. Available to join immediately as an intern or full-time professional.
+    </p>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=debangshu.data@gmail.com&su=Hiring%20Inquiry%20-%20AI%20Engineer&body=Hello%20Debangshu,%0D%0A%0D%0AWe%20would%20like%20to%20discuss%20an%20AI%20opportunity%20with%20you."
+     target="_blank"
+     class="btn btn-light">
+     Hire Me
+  </a>
+
+  <!-- CONNECT WITH ME -->
+  <div class="connect-me">
+    <p>
+      📧 <a href="mailto:debangshu.data@gmail.com">debangshu.data@gmail.com</a>
+      | 📞 <a href="tel:+917439477347">+91 74394 77347</a>
+    </p>
+  </div>
+
+</section>
+<footer>
+  © <script>document.write(new Date().getFullYear())</script> Debangshu Sadhukhan
+</footer>
+
+<script src="js/aos.js"></script>
+<script>
+  // Initialize AOS animations
+  AOS.init({ duration: 900, once: true });
+
+  // Cursor glow effect
+  const glow = document.getElementById("cursorGlow");
+  if (glow) {
+    document.addEventListener("mousemove", e => {
+      glow.style.left = e.clientX + "px";
+      glow.style.top = e.clientY + "px";
+    });
+  }
+
+  // Force dark theme permanently
+  document.body.classList.add("dark");
+</script>
+<!-- ================= FIXED SECTION IDS + RIGHT CIRCLE NAV ================= -->
+
+<script>
+/* 🔹 Ensure correct IDs on EXISTING sections (no new sections created) */
+document.addEventListener("DOMContentLoaded", () => {
+  const map = [
+    ["About", "about"],
+    ["Education", "education"],
+    ["Skills", "skills"],
+    ["Experience", "experience"],
+    ["Noteworthy Projects", "projects"],
+    ["Reports & Documentation", "reports"],
+    ["Certifications", "certifications"],
+    ["Achievements", "achievements"],
+    ["Let’s Work Together", "contact"]
+  ];
+
+  document.querySelectorAll("section").forEach(sec => {
+    const title = sec.querySelector("h2");
+    if (!title) return;
+
+    map.forEach(([text, id]) => {
+      if (title.innerText.includes(text)) {
+        sec.id = id;
+      }
+    });
+  });
+});
+</script>
+
+<style>
+/* ================= RIGHT SIDE NAV ================= */
+.section-nav {
+  position: fixed;
+  top: 50%;
+  right: 22px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 9999;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.45;
+  transition: opacity 0.25s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  opacity: 1;
+}
+
+.nav-item .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #facc15;
+  box-shadow: 0 0 8px rgba(250,204,21,0.6);
+  transition: transform 0.3s ease;
+}
+
+.nav-item.active .dot {
+  transform: scale(1.6);
+}
+
+.nav-item small {
+  margin-top: 4px;
+  font-size: 10px;
+  color: #fef3c7;
+  white-space: nowrap;
+}
+
+/* Hide on mobile */
+@media (max-width: 768px) {
+  .section-nav { display: none; }
+}
+</style>
+
+<div class="section-nav">
+  <div class="nav-item" data-target="about"><span class="dot"></span><small>About</small></div>
+  <div class="nav-item" data-target="education"><span class="dot"></span><small>Education</small></div>
+  <div class="nav-item" data-target="skills"><span class="dot"></span><small>Skills</small></div>
+  <div class="nav-item" data-target="experience"><span class="dot"></span><small>Experience</small></div>
+  <div class="nav-item" data-target="projects"><span class="dot"></span><small>Projects</small></div>
+  <div class="nav-item" data-target="reports"><span class="dot"></span><small>Reports</small></div>
+  <div class="nav-item" data-target="certifications"><span class="dot"></span><small>Certificates</small></div>
+  <div class="nav-item" data-target="achievements"><span class="dot"></span><small>Awards</small></div>
+  <div class="nav-item" data-target="contact"><span class="dot"></span><small>Contact</small></div>
+</div>
+
+<script>
+/* ================= SCROLL + ACTIVE STATE ================= */
+document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(".nav-item");
+
+  const sections = [...items].map(item => ({
+    nav: item,
+    section: document.getElementById(item.dataset.target)
+  })).filter(x => x.section);
+
+  // Click scroll
+  sections.forEach(({ nav, section }) => {
+    nav.addEventListener("click", () => {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
+  // Active highlight
+  window.addEventListener("scroll", () => {
+    let activeId = "";
+    sections.forEach(({ section }) => {
+      if (section.getBoundingClientRect().top <= window.innerHeight * 0.35) {
+        activeId = section.id;
+      }
+    });
+
+    sections.forEach(({ nav }) => {
+      nav.classList.toggle("active", nav.dataset.target === activeId);
+    });
+  });
+});
+</script>
+
+<!-- ================= END FIX ================= -->
+
+
+</body>
+</html>
+
